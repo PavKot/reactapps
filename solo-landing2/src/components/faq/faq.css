@@ -1,0 +1,42 @@
+.faq-container{
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.faq-container h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #192252;
+}
+
+.faq-container h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #848FAC;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.faq-container p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media screen and (max-width:1000px) {
+    .faq-container{
+    flex-direction: column;
+    }
+    .question{
+        width: 20rem !important;
+    }
+}

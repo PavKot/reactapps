@@ -1,0 +1,112 @@
+.NavbarItems{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.nav-menu li:first-child{
+    margin-left: 0;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-links{
+    color: #192252;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+
+.menu-links:hover{
+    border-bottom: 2px solid #192252;
+}
+
+.btn-link{
+    background-color: #0E1734;
+    color: #fff;
+    padding: 14px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-link:hover{
+    background-color: #fff;
+    color: #0E1734;
+    transition: 0.3s ease-in-out;
+}
+#nav-btn-resp{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 1;
+    }
+
+    .nav-menu.active li{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 65%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .NavbarItems{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px 100px;
+        z-index: 10000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        background-color: #fff;
+    }
+    .nav-menu.active{
+        background: #fff;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+      .navbar-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 75%);
+      }
+      #nav-btn{
+        display: none;
+      }
+      #nav-btn-resp{
+        display: unset;
+      }
+}

@@ -1,0 +1,35 @@
+.food-container{
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+}
+
+.food-container h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #192252;
+}
+
+.food-container h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #848FAC;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .food-container{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .food-image img{
+        width: 100%;
+    }
+}

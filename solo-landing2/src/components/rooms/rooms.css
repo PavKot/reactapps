@@ -1,0 +1,74 @@
+.rooms-container{
+    padding: 2rem 4rem;
+}
+
+.rooms-container .rooms-header{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.rooms-container h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #192252;
+}
+
+.rooms-container h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #848FAC;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.rooms-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.rooms-cards .card{
+    width: 20rem;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.card a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #424F7B;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+    .rooms-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .rooms-container{
+        padding: 0;
+    }
+
+    .rooms-cards .card{
+        margin: 0 auto;
+    }
+}
