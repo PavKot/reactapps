@@ -1,0 +1,11 @@
+.counts-container a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+.counts-container a:hover{
+    color: #910671;
+    transition: 0.2s ease-in-out;
+}

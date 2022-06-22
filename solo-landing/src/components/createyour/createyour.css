@@ -1,0 +1,53 @@
+.create-container{
+    padding: 2rem 4rem;
+}
+
+.create-content{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.create-content h1{
+    color: #fff;
+}
+
+.create-content h4{
+    color: #fff;
+    opacity: 0.7;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+}
+.create-content a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    border: 2px #910671 solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    color:#fff;
+    transition: 0.2s ease-in-out;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.create-content a:first-child{
+    margin: 0;
+}
+
+.create-content a:hover{
+    background: #910671;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.ellipse-create{
+    z-index: -1;
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    filter: blur(100px);
+    right: 40%;
+    background-color: #19798c;
+}
