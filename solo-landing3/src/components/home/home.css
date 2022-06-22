@@ -1,0 +1,115 @@
+.home-container{
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(95.38deg, #2C1970 37.19%, #2C1970 64.54%, #010101 84.63%);
+}
+
+.home-content h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    background: -webkit-linear-gradient(180deg, #F1A4FA 0%, #80EFF5 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-content h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #DDE2FF;
+    opacity: 0.6;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.home-content-counters{
+    display: flex;
+    gap: 2rem;
+}
+
+.home-content .nav-btn{
+    background: linear-gradient(89.71deg, #6929AF 1.95%, #3B2999 99.75%);
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.home-content .nav-btn:hover{
+    background: #111;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.home-content-counters h4 span{
+    font-weight: bold;
+    background: -webkit-linear-gradient(0deg, #A55BF6 33.85%, #FDFDFD 99.99%), #FFD100;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line{
+    position: absolute;
+    background-image: url('../../assets/line1.png');
+    width: 390px;
+    height: 503px;
+    opacity: 0.1;
+    top: 13%;
+    left: 15%;
+    background-repeat: no-repeat;
+}
+.line2{
+    position: absolute;
+    background-image: url('../../assets/line2.png');;
+    width: 890px;
+    height: 750px;
+    opacity: 0.1;
+    top: 13%;
+    left: 5%;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+.line3{
+    position: absolute;
+    background-image: url('../../assets/line3.png');;
+    width: 890px;
+    height: 750px;
+    opacity: 0.1;
+    top: 10%;
+    left: 5%;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    z-index: 2;
+}
+
+
+@media screen and (max-width:1200px) {
+    .home-container{
+        flex-direction: column;
+    }
+
+    .home-image img{
+        width: 100%;
+    }
+
+    .home-content-counters{
+        position: unset;
+        padding-top: 1rem;
+    }
+
+    .line, .line2, .line3{
+        display: none;
+    }
+    .home-content {
+        z-index: 0;
+    }    
+}

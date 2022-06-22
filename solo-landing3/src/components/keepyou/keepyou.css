@@ -1,0 +1,90 @@
+.keepyou-container{
+    padding: 2rem 4rem;
+    text-align: center;
+    background-color:rgba(0,0,0,1.1);
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.keepyou-container h4{
+    color: #DDE2FF;
+    opacity: 0.6;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.keepyou-container h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+.keepyou-container h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    background: -webkit-linear-gradient(180deg, #F1A4FA 0%, #80EFF5 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.keepyou-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: url('../../assets/keepyou.png');
+    background-color:rgba(0,0,0,1.1);
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 4rem;
+}
+
+.keepyou-content .nav-btn{
+    background: linear-gradient(89.71deg, #6929AF 1.95%, #3B2999 99.75%);
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.keepyou-content .nav-btn:hover{
+    background: #111;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.keepyou-input{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.keepyou-input input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width:1200px) {
+    .keepyou-container{
+        padding: 0;
+    }
+
+    .keepyou-content{
+        height: unset;
+    }
+
+    .keepyou-input{
+        flex-direction: column;
+    }
+}
